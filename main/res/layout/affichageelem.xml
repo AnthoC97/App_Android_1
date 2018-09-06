@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/famType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"/>
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/famType">
+
+        <RelativeLayout
+            android:id="@+id/informations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/holo_green_dark"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/titleInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informations"/>
+            <TextView
+                android:id="@+id/site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleInfo"/>
+            <TextView
+                android:id="@+id/batiment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/site"/>
+            <TextView
+                android:id="@+id/niveau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/batiment"/>
+            <TextView
+                android:id="@+id/zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/niveau"/>
+            <TextView
+                android:id="@+id/lieu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zone"/>
+            <TextView
+                android:id="@+id/infos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lieu"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/informations"
+            android:layout_toRightOf="@+id/informations"
+            android:background="@android:color/holo_blue_dark"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/titleDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dates"/>
+
+            <TextView
+                android:id="@+id/date_proverif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleDate"/>
+
+            <TextView
+                android:id="@+id/date_perem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_proverif"/>
+
+            <TextView
+                android:id="@+id/date_procycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_perem"/>
+
+            <TextView
+                android:id="@+id/date_prointerne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_procycle"/>
+
+            <TextView
+                android:id="@+id/date_proctrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_prointerne"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l">
+        <GridLayout
+            android:id="@+id/boutons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="6"
+            android:rowCount="2"
+            >
+            <Button
+                android:text="Anomalies"/>
+            <Button
+                android:text="Notes"/>
+            <Button
+                android:text="Maintenance"/>
+            <Button
+                android:text="Déplacer"/>
+            <Button
+                android:text="Echanger"/>
+            <Button
+                android:text="Operation"/>
+            <Button
+                android:text="Caractéristiques"/>
+            <Button
+                android:text="Type"/>
+            <Button
+                android:text="Entité"/>
+            <Button
+                android:text="Scan. Lieu"/>
+            <Button
+                android:text="Supprimer"/>
+            <Button
+                android:text="Stock"/>
+
+        </GridLayout></HorizontalScrollView>
+
+
+
+</RelativeLayout>

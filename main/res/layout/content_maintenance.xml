@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="fr.cara.agess.MaintenanceActivity"
+    tools:showIn="@layout/activity_maintenance">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Maintenance"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="-9dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_below="@id/toolbar2"
+    android:weightSum="100">
+    <ListView
+        android:id="@+id/list_maintenance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="90">
+        <Button
+            android:id="@+id/valider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valider"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:background="@drawable/button"
+            android:layout_margin="3dp"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/annuler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Annuler"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:background="@drawable/button"
+            android:layout_margin="3dp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

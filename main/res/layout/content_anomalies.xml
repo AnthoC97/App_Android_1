@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="fr.cara.agess.AnomaliesActivity"
+    tools:showIn="@layout/activity_anomalies"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Anomalies"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="-9dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar2"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/element"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="TextView"
+             android:layout_weight="19"/>
+
+        <ListView
+            android:id="@+id/list_anomalies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="14"/>
+
+        <CheckBox
+            android:id="@+id/anomalie_null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Aucune Anomalie "
+            android:layout_weight="18"/>
+        <Button
+            android:id="@+id/ajouter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:text="Ajouter"
+            android:layout_weight="18"
+            android:background="@drawable/button"
+            android:layout_margin="3dp"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/editText_anomalies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="13"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:enabled="true"
+            android:focusable="true"
+            android:gravity="top|left"
+            android:imeOptions="actionSearch"
+            android:inputType="textMultiLine"
+            android:isScrollContainer="true"
+            android:lines="10" />
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="18">
+            <Button
+                android:id="@+id/valider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="valider"
+                android:textSize="12sp"
+                android:background="@drawable/button"
+                android:layout_margin="3dp"
+                android:textColor="@android:color/white"/>
+            <Button
+                android:id="@+id/annuler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Annuler"
+                android:textSize="12sp"
+                android:background="@drawable/button"
+                android:layout_margin="3dp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

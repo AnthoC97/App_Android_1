@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Agess</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_element">Element</string>
+    <string name="title_activity_anomalies">Anomalies</string>
+    <string name="title_activity_maintenance">MaintenanceActivity</string>
+    <string name="title_activity_operation">OperationActivity</string>
+    <string name="title_activity_caracteristique">CaracteristiqueActivity</string>
+    <string name="title_activity_filtre">FiltreActivity</string>
+    <string name="title_activity_echanger">EchangerActivity</string>
+</resources>

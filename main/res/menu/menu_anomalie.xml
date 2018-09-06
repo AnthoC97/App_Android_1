@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ListeTourneeActivity">
+
+    <item
+        android:id="@+id/action_deconnexion"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Deconnexion"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_prise_photo"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="PrisePhoto"
+        app:showAsAction="ifRoom" />
+
+</menu>

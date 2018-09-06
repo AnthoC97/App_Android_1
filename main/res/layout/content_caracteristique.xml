@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="fr.cara.agess.CaracteristiqueActivity"
+    tools:showIn="@layout/activity_caracteristique">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Caractéristiques"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="-9dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:layout_below="@id/toolbar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Liste des caractéristiques"
+            android:layout_weight="48"/>
+
+        <ListView
+            android:id="@+id/liste_caracteristique"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="42">
+            <Button
+                android:id="@+id/valider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Valider"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:background="@drawable/button"
+                android:layout_margin="3dp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="bottom"/>
+            <Button
+                android:id="@+id/annuler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Annuler"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:background="@drawable/button"
+                android:layout_margin="3dp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
